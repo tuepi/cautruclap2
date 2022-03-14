@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s1 = 0;
+    document.write(s1 + "<br>");
+    let s2 = 1;
+    document.write(s2 + "<br>");
+    let s3;
+    let i1 = prompt("Nhập số lượng cần in");
+    for (i=0; i <= i1; i++) {
+        s3 = s1 + s2;
+        document.write(s3 + "<br>");
+        s1 = s2;
+        s2 = s3;
+    }
+</script>
+</body>
+</html>
