@@ -6,12 +6,19 @@
 </head>
 <body>
 <script>
-    let num = 20;
-    let count = 0;
-    let N = 2;
-    for (; count < num; count++) {
-        if (N % )
-    }
+  let dem = 0;
+  for (let j = 2; dem < 20; j++) {
+      let check = "snt";
+      for (let i = 2; i < j; i++) {
+          if (j % i == 0) {
+              check = "Không phải số nguyên tố";
+          }
+      }
+      if (check == "snt") {
+          document.write(j + "<br>");
+          dem++;
+      }
+  }
 </script>
 </body>
 </html>

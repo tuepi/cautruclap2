@@ -5,6 +5,24 @@
     <title>Title</title>
 </head>
 <body>
-
+    <button onclick="play()">Chơi</button>
+    <script>
+        function play() {
+            let a = parseInt(prompt('Nhập số muốn bắt đầu: '));
+            let b = parseInt(prompt('Nhập số muốn kết thúc: '));
+            let c = Math.floor(Math.random() * (b - a) + a);
+            for (i = 0; i < 3; i++) {
+                let d = prompt('Nhập số bạn đoán: ');
+                if (d == c) {
+                    alert('Win');
+                    break;
+                } else if (d < c) {
+                    alert('Số lớn hơn!');
+                } else {
+                    alert('Số nhỏ hơn!');
+                }
+            }
+        }
+    </script>
 </body>
 </html>
